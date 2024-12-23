@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Booking App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Booking Details</h2>
+            <form id="booking-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="date" required>
+                <select required>
+                    <option value="" disabled selected>Select Booking Type</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="flight">Flight</option>
+                    <option value="event">Event</option>
+                </select>
+                <textarea placeholder="Additional Notes (optional)" rows="4"></textarea>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Confirmation</h2>
+            <p>Your booking details will appear here after submission.</p>
+        </div>
+    </main>
+</body>
+</html>
